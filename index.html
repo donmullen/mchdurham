@@ -3,6 +3,11 @@ layout: default
 title: MCHDurham
 ---
   <div class="row">
+    <div class="large-12 columns">
+      <img style="float:right" src="http://mchdurham.org/images/home_bottomstrip02.jpg"/>
+    </div>
+  </div>
+  <div class="row">
     <div class="large-9 columns">
       <h2>Celebrating 37 Years!</h2>
       <p>Montessori Children’s House of Durham (MCHD) lays foundations
@@ -18,8 +23,8 @@ title: MCHDurham
       <p>Founded in 1976, MCHD became the first school in NC to be
       Accredited by the American Montessori Society, in 1996.</p>
       <br/>
-      <p>Watch <a href="#" data-reveal-id="laying-the-foundation">MCHD
-      Laying the Foundation</a>, a video by MCHD parent, Sam King.</p>
+      <p><a class="button small" href="#" data-reveal-id="laying-the-foundation">Watch MCHD
+      Laying the Foundation</a> &mdash; a video by MCHD parent, Sam King.</p>
     </div>
     <div id="laying-the-foundation" class="reveal-modal small">
       <h2>Laying the Foundation</h2>
@@ -33,8 +38,9 @@ title: MCHDurham
     </div>
     <nav class="large-3 columns">
       <h3>Announcements</h3>
-      <p>A parent morning coffee will be help Sept 3, 2013.</p>
-      <p>Don't forget to turn in your School Plus! forms!</p>
-      <p>Quotes from parents</p>
+      <div>
+        {% capture announcements %}{% include announcements.md %}{% endcapture %}
+        {{ announcements | markdownify }}
+      </div>
     </nav>
   </div>

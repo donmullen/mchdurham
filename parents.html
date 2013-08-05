@@ -1,0 +1,84 @@
+---
+layout: default
+title: MCHDurham
+---
+
+  <div class="row">
+    <div class="large-12 columns">
+      <img style="float:left" src="http://mchdurham.org/images/sectiontop_photos09.jpg"/>
+      <h2>MCHD Parents</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="section-container vertical-tabs" data-section="vertical-tabs" data-options="deep_linking: true">
+        <section>
+          <p class="title" data-section-title><a href="#current">Current Parents</a></p>
+          <div class="content" data-slug="current" data-section-content>
+            <p>Thank you for visiting the area of our site reserved for
+            current MCHD parents. If you need immediate assistance from
+            someone at MCHD, please contact us at 489-9045 or at
+              <a href="mailto:info@mchdurham.org">info@mchdurham.org</a></p>
+
+            <p>If you are a prospective parent, please learn more about
+            us at <a href="montessori.html#montessori">Montessori at MCHD</a> or contact us directly
+            at <a href="mailto:info@mchdurham.org">info@mchdurham.org</a></p>
+
+            <div class="markdown">
+              {% capture calendars %}{% include calendars.md %}{% endcapture %}
+              {{ calendars | markdownify }}
+            </div>
+
+            <p>Also see <a href="parents.html#forms">other school forms</a>.</p>
+
+            <h3>The Family-School Partnership</h3>
+            <p><a href="http://www.amshq.org/">The American Montessori Society</a> (AMS) is committed to
+            promoting effective family-school partnerships through
+            following principles of good practice for member
+            schools. Both the American Montessori Society, and the
+            families it serves, recognize that effective partnerships
+            are characterized by mutual respect, open communication, a
+            shared commitment to collaboration, clearly defined
+            responsibilities, and a common vision of goals for the
+            child.</p>
+
+            <h3>Participation</h3>
+            <p>MCHD is most successful when parents make a commitment,
+            at whatever level they can, to participate in the school
+            experience.  Commitment can vary greatly from parent to
+            parent: for some it may mean being a class parent to
+            coordinate support for the teachers regularly, to others it
+            may mean service on the Board of Directors or participation
+            in Parents’ Association projects, and to others it may mean
+            helping to move a mountain of mulch on grounds workdays or
+            making a financial contribution. We encourage everyone to
+            learn about the many opportunities for participation
+            available, and to choose those that fit best with your
+            personal interests and your available time and
+            resources.</p>
+
+          </div>
+        </section>
+        <section>
+          <p class="title" data-section-title><a href="#forms">School Forms</a></p>
+          <div class="content" data-slug="forms" data-section-content>
+            <h1>School Forms</h1>
+            <p>Please click on the links below to open a printable school form in pdf format or excel.</p>
+            <div class="markdown">
+              {% capture forms %}{% include forms.md %}{% endcapture %}
+              {{ forms | markdownify }}
+            </div>
+            <p>If you are a prospective parent, please learn more about
+            us at Montessori at MCHD or contact us directly at
+              <a href="mailto:info@mchdurham.org">info@mchdurham.org.</a></p>
+          </div>
+        </section>
+        <section class="section active">
+          <p class="title"><a href="school-plus.html#about">School Plus!</a></p>
+        </section>
+        <section class="section active">
+          <p class="title"><a href="school-plus.html#no-school-camp">No School Camp</a></p>
+        </section>
+      </div>
+    </div>
+  </div>
