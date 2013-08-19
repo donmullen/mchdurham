@@ -1,3 +1,10 @@
+/* line 4, ../sass/app.scss */
+#hands {
+  background-image: url(images/community_hands.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
 /* Background color for the top bar */
 /* Topbar Height and Margin */
 /* Change the bulleted list margin */

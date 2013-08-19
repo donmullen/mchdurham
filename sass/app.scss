@@ -1,6 +1,12 @@
 // Global Foundation Settings
 @import "settings";
 
+#hands {
+  background-image: url(images/community_hands.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+};
+
 $mchd-blue: rgb(3,19,67);
 $mchd-green: rgb(106,191,70);
 
